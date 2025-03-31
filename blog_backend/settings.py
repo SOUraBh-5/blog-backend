@@ -4,7 +4,7 @@ import dj_database_url
 
 BASE_DIR = Path(_file_).resolve().parent.parent
 
-SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'your-fallback-secret-key')
+SECRET_KEY = os.environ.get('SECRET_KEY', 'your-fallback-secret-key')
 DEBUG = os.environ.get('DEBUG', 'False') == 'True'
 
 ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS', '').split(',') if not DEBUG else ['*']

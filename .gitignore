@@ -1,0 +1,44 @@
+# Python
+_pycache_/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.pdb
+*.egg-info/
+*.egg
+*.log
+
+# Django
+db.sqlite3
+*.pot
+*.pyc
+local_settings.py
+.env
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+
+# VS Code
+.vscode/
+
+# macOS + Windows
+.DS_Store
+Thumbs.db
+
+# PostgreSQL (optional)
+*.psql
+
+# Pycache inside any folder
+**/_pycache_/
+
+# Migrations (optional: remove if you want to track migrations)
+*/migrations/_pycache_/
+/migrations/.py[cod]
+
+# Static & media (generated files)
+staticfiles/
+media/

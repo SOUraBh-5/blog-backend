@@ -56,9 +56,10 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'blog_backend.wsgi.application'
 
-# DATABASE (Railway will inject DATABASE_URL)
+# DATABASE (Railway injects DATABASE_URL)
 DATABASES = {
     'default': dj_database_url.config(
+        default=os.environ.get('DATABASE_URL', ''),  # 👈 Ensures fallback if env is missing
         conn_max_age=600,
         ssl_require=not DEBUG
     )
